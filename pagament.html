@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pagament.css">
+    <title>Simulação de Pagamento</title>
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Seleção de Pagamento</h1>
+        <div class="payment-options">
+                <input type="radio" id="payment1" name="payment" value="presencial"> 
+                <label for="payment1">Pagamento Presencial</label><br>
+                <input type="radio" id="payment2" name="payment" value="cartao"> 
+                <label for="payment2">Cartão de Crédito</label><br>
+                <input type="radio" id="payment3" name="payment" value="pix"> 
+                <label for="payment3">PIX</label><br>
+        </div>
+        <div id="payment-details">
+        </div>
+        <button id="finalize-button" style="display:none;" type="submit">Finalizar!</button>
+        <p id="result"></p>
+    </div>
+    <script src="pagament.js"></script>
+</body>
+</html>

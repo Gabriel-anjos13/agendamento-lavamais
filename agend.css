@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e6e6e6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  #calendar {
+    max-width: 600px;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #0e2179;
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  h2 {
+    color: #0e2179;
+  }
+  
+  label {
+    font-weight: bold;
+    color: #000;
+    font-size: 19px;
+  }
+  
+  input[type="date"],
+  select {
+    width: 92%;
+    padding: 15px;
+    margin: 5px 0;
+    border: 1px solid #0e2179;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  input[type="date"]::after {
+    content: '\25BC';
+    color: #0e2179;
+    position: absolute;
+    right: 0;
+    top: 30%;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+  
+  .date-button {
+        min-width: 300px;
+        min-height: 40px;
+        font-family: 'Arial', sans-serif;
+        font-size: 18px;
+        text-transform: uppercase;
+        letter-spacing: 1.3px;
+        font-weight: 700;
+        color: #bbbbbb;
+        background: #0e2179;
+        background: linear-gradient(90deg, rgb(37, 59, 121) 0%, rgb(8, 9, 77) 100%);
+        border: none;
+        border-radius: 1000px;
+        box-shadow: 12px 12px 24px rgba(13, 13, 36, 0.64);
+        transition: background-color 0.3s ease;
+        cursor: pointer;
+        outline: none;
+        position: relative;
+        padding: 10px;
+    
+    }
+  
+  .date-button:hover {
+    color: #fff;
+    background-color: #254ad1;
+  }
+  
+  .mensagem {
+    font-weight: bold;
+    margin-top: 20px;
+    color: #229635;
+    font-size: 18px;
+  }
+  
+  .agendamentos {
+    text-align: left;
+    margin-top: 40px;
+  }
+  
+  .agendamento-item {
+    border: 1px solid #0e2179;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .agendamento-item p {
+    margin: 5px 0;
+  }
+  
+  .delete-button {
+    background-color: #b31e1e;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-left: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .delete-button:hover {
+    background-color: #970f00;
+  }
